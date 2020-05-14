@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      font-family: 'Helvetica', 'Arial', sans-serif;
+    }
+    .container {
+      max-width: 600px;
+    }
+    img {
+      max-width: 100%;
+    }
+    header {
+      min-width: 100%;
+      width: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      background-color: #EDF1F3;
+    }
+    header span {
+      padding: 5px;
+      background-color: #0FD8DB;
+      color: grey;
+    }
+    main img {
+      align-self: center;
+    }
+    main p {
+      text-align: center;
+    }
+    main h1 {
+      grid-column: auto / span 2;
+      text-align: center;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    button {
+      font-size: 0.9rem;
+      padding: 10px;
+      border-radius: 18px;
+      background-color: #0FD8DB;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span>Logo</span>
+    </header>
+    <main>
+      <h1>Este es el reporte semanal de lo que escuchaste</h1>
+      <img src="clock.png" alt="">
+      <p><strong>1h 20m</strong> <br> Fue tu total de horas escuchadas. 
+        <br><br> Es como si hubieras leído <strong>40 páginas 📚</strong> <br><br>La semana pasada escuchaste <strong>5h 3m</strong>¡Alcanza tu marca! <br><br>
+      <button>Seguir escuchando</button></p>
+    </main>
+  </div>
+</body>
+</html>
