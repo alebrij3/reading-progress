@@ -20,19 +20,23 @@
       font-family: 'Helvetica', 'Arial', sans-serif;
     }
     .container {
-      max-width: 600px;
+      width: 600px;
+      max-width: 100%;
     }
     img {
       max-width: 100%;
     }
-    header {
-      min-width: 100%;
+    header, footer {
+      max-width: 100%;
       width: 600px;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100px;
       background-color: #EDF1F3;
+    }
+    footer {
+      margin-top: 20px;
     }
     header span {
       padding: 5px;
@@ -67,6 +71,12 @@
     .full-width {
       grid-column: 1 / 3;
     }
+    @media screen and (max-width: 400px) {
+      main img, main p {
+        grid-column: 1 / -1;
+        justify-self: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -82,6 +92,7 @@
       <button>Seguir escuchando</button></p>
       <p class="full-width">Tu meta de lectura este año: 10 libros <br><br> ¡Cada día estás más cerca!</p>
     </main>
+    <footer><p>This is the footer</p></footer>
   </div>
 </body>
 </html>
