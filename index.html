@@ -54,12 +54,18 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
+    a {
+      font-size: 0.9rem;
+    }
     button {
       font-size: 0.9rem;
       padding: 10px;
       border-radius: 18px;
       background-color: #0FD8DB;
       border: none;
+    }
+    .full-width {
+      grid-column: 1 / 3;
     }
   </style>
 </head>
@@ -72,8 +78,9 @@
       <h1>Este es el reporte semanal de lo que escuchaste</h1>
       <img src="clock.png" alt="">
       <p><strong>1h 20m</strong> <br> Fue tu total de horas escuchadas. 
-        <br><br> Es como si hubieras leído <strong>40 páginas 📚</strong> <br><br>La semana pasada escuchaste <strong>5h 3m</strong>¡Alcanza tu marca! <br><br>
+        <br><br> Es como si hubieras leído <strong>40 páginas 📚</strong> <br><a href="#">Comparte tu progreso en Twitter</a><br><br>La semana pasada escuchaste <strong>8h 3m</strong>¡Alcanza tu marca de la semana anterior!<br><br>
       <button>Seguir escuchando</button></p>
+      <p class="full-width">Tu meta de lectura este año: 10 libros <br><br> ¡Cada día estás más cerca!</p>
     </main>
   </div>
 </body>
